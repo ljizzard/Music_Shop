@@ -35,18 +35,14 @@ public class DrumTest {
 
     @Test
     public void canGetSellingPrice() {
-        assertEquals(1500, drum.getSellingPrice(), 0.00);
-    }
-
-    @Test
-    public void canSetSellingPrice() {
-        drum.setSellingPrice(2000);
         assertEquals(2000, drum.getSellingPrice(), 0.00);
     }
 
+
+
     @Test
     public void canGetPurchasedPrice() {
-        assertEquals(850, drum.getPurchasedPrice(), 0.00);
+        assertEquals(1500, drum.getPurchasedPrice(), 0.00);
     }
 
     @Test
@@ -58,6 +54,6 @@ public class DrumTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(650, drum.calculateMarkup(), 0.00);
+        assertEquals(500, drum.calculateMarkup(), 0.00);
     }
 }

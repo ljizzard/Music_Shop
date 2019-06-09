@@ -29,11 +29,11 @@ public class GuitarTest {
 
     @Test
     public void canMakeSound() {
-        assertEquals("strum strum twang", guitar.makeSound());
+        assertEquals("Strum strum twang", guitar.makeSound());
     }
     @Test
     public void canGetSellingPrice() {
-        assertEquals(1500, guitar.getSellingPrice(), 0.00);
+        assertEquals(2000, guitar.getSellingPrice(), 0.00);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class GuitarTest {
 
     @Test
     public void canGetPurchasedPrice() {
-        assertEquals(850, guitar.getPurchasedPrice(), 0.00);
+        assertEquals(1500, guitar.getPurchasedPrice(), 0.00);
     }
 
     @Test
@@ -56,7 +56,7 @@ public class GuitarTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(650, guitar.calculateMarkup(), 0.00);
+        assertEquals(500, guitar.calculateMarkup(), 0.00);
     }
 }
 

@@ -37,7 +37,7 @@ public class PianoTest {
 
     @Test
     public void canGetSellingPrice() {
-        assertEquals(1500, piano.getSellingPrice(), 0.00);
+        assertEquals(2000, piano.getSellingPrice(), 0.00);
     }
 
     @Test
@@ -48,7 +48,7 @@ public class PianoTest {
 
     @Test
     public void canGetPurchasedPrice() {
-        assertEquals(850, piano.getPurchasedPrice(), 0.00);
+        assertEquals(1500, piano.getPurchasedPrice(), 0.00);
     }
 
     @Test
@@ -60,6 +60,6 @@ public class PianoTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(650, piano.calculateMarkup(), 0.00);
+        assertEquals(500, piano.calculateMarkup(), 0.00);
     }
 }

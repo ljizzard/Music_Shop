@@ -28,7 +28,7 @@ public class SaxophoneTest {
 
     @Test
     public void canGetSellingPrice() {
-        assertEquals(1500, saxophone.getSellingPrice(), 0.00);
+        assertEquals(2000, saxophone.getSellingPrice(), 0.00);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class SaxophoneTest {
 
     @Test
     public void canGetPurchasedPrice() {
-        assertEquals(850, saxophone.getPurchasedPrice(), 0.00);
+        assertEquals(1500, saxophone.getPurchasedPrice(), 0.00);
     }
 
     @Test
@@ -51,7 +51,7 @@ public class SaxophoneTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(650, saxophone.calculateMarkup(), 0.00);
+        assertEquals(500, saxophone.calculateMarkup(), 0.00);
     }
 
 

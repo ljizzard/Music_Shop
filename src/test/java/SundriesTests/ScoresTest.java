@@ -46,6 +46,6 @@ public class ScoresTest {
 
         @Test
         public void canGetCalculateMarkup(){
-            assertEquals(7, scores.calculateMarkup(), 0.00);
+            assertEquals(8, scores.calculateMarkup(), 0.00);
         }
 }

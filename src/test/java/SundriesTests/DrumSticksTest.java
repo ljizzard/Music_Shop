@@ -35,7 +35,7 @@ public class DrumSticksTest {
 
     @Test
     public void canGetPurchasedPrice(){
-        assertEquals(5, drumsticks.getPurchasedPrice(), 0.00);
+        assertEquals(7, drumsticks.getPurchasedPrice(), 0.00);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class DrumSticksTest {
 
     @Test
     public void canGetCalculateMarkup(){
-        assertEquals(7, drumsticks.calculateMarkup(), 0.00);
+        assertEquals(8, drumsticks.calculateMarkup(), 0.00);
     }
 
 
