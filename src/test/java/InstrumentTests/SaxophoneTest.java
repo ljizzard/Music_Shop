@@ -13,7 +13,7 @@ public class SaxophoneTest {
     @Before
 
     public void setUp(){
-        saxophone = new Saxophone("Alto", "Woodwind");
+        saxophone = new Saxophone("Alto", "Woodwind",2000,1500);
     }
 
     @Test
@@ -23,7 +23,35 @@ public class SaxophoneTest {
 
     @Test
     public void canMakeSound(){
-        assertEquals("Doo doo doo", saxophone.getSound());
+        assertEquals("Doo doo doo", saxophone.makeSound());
+    }
+
+    @Test
+    public void canGetSellingPrice() {
+        assertEquals(1500, saxophone.getSellingPrice(), 0.00);
+    }
+
+    @Test
+    public void canSetSellingPrice() {
+        saxophone.setSellingPrice(2000);
+        assertEquals(2000, saxophone.getSellingPrice(), 0.00);
+    }
+
+    @Test
+    public void canGetPurchasedPrice() {
+        assertEquals(850, saxophone.getPurchasedPrice(), 0.00);
+    }
+
+    @Test
+    public void canSetPurchasedPrice() {
+        saxophone.setPurchasedPrice(350);
+        assertEquals(350, saxophone.getPurchasedPrice(), 0.00);
+
+
+    }
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(650, saxophone.calculateMarkup(), 0.00);
     }
 
 

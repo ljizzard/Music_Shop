@@ -8,8 +8,8 @@ public class Drum extends Instrument implements IPlay {
 
 
 
-    public Drum (String typeOfDrum, String section){
-        super (section);
+    public Drum (String typeOfDrum, String section, double sellingPrice, double purchasedPrice){
+        super (section, sellingPrice, purchasedPrice);
         this.typeOfDrum = typeOfDrum;
     }
 
